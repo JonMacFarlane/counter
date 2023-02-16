@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+    <style>
+      /* CSS styles go here */
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Counter</h1>
+      <p id="visitor-count">0</p>
+    </header>
+    <!-- Body content goes here -->
+    <script>
+      // JavaScript code for updating the visitor count
+      let count = 0;
+      const countElem = document.getElementById("visitor-count");
+      setInterval(() => {
+        count++;
+        countElem.textContent = count.toString();
+      }, 1000);
+    </script>
+  </body>
+</html>
